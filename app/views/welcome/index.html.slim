@@ -1,0 +1,62 @@
+nav.navbar.navbar-inverse.navbar-fixed-top
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand Font Awesome Sample
+    #navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li.active
+          a Dashboard
+        li
+          a Settings
+        li
+          a Profile
+        li
+          a Help
+      form.navbar-form.navbar-right
+        input.form-control type="text" placeholder="Search..."
+.container-fluid
+  .row
+    .col-sm-3.col-md-2.sidebar
+      ul.nav.nav-sidebar
+        li.active
+          a Overview
+          span.sr-only (current)
+        li
+          a Reports
+        li
+          a Analytics
+    .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+      h1.page-header Icon Sample
+      .table-responsive
+        table.table.table-striped
+          thead
+            tr
+              th Icon
+              th Type
+              th Name
+          tbody
+            tr
+              td = fa_icon "angellist"
+              td New Icons in 4.2
+              td fa-angellist
+            tr
+              td = fa_icon "camera"
+              td Web Application Icons
+              td fa-camera
+            tr
+              td = fa_icon "spinner"
+              td Spinner Icons
+              td fa-spinner
+            tr
+              td = fa_stacked_icon "circle-o", base: "square-o"
+              td Form Control Icons
+              td fa-circle-o fa-square-o
+            tr
+              td = fa_stacked_icon "github-alt", base: "square-o", text: "gitHub", reverse: true
+              td Brand Icons
+              td fa-github-alt fa-square-o
